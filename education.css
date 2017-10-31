@@ -3,23 +3,23 @@
 }
 
 #sgmap {
-    position: absolute;
-    height: 50%;
-    width: 50%;
+    height: 65vh;
+    width: 90vh;
+    display: inline-block;
    }
 
 #simpic {
-    width: 47.5%;
+    width: 50%;
     margin: auto;
 }
 
 #uob {
-    height: 400px;
+    width: 49%;
 }
 
 #bathmap {
     height: 400px;
-    width: 50%;
+    width: 49%;
     margin: auto;
     display: inline-block;
 }
