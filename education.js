@@ -15,4 +15,9 @@ function initMap() {
             map: map
         });
     });
+
+    $(window).resize(function() {
+        google.maps.event.trigger(map, "resize");
+    });
 }
+
