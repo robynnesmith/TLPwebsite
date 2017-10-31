@@ -3,9 +3,14 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="portfoliowebsite.css">
+    <link rel="stylesheet" type="text/css" href="education.css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=singMap"></script>    
-    <script src="education.js"></script>
+    <script type="text/javascript" src="portfoliowebsite.js"></script>
+    <script type="text/javascript" src="education.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA17AfpUrrFmKFYWbxU-wpKY-YfP6BvM5A&callback=initMap"></script> 
+    <script>
+            
+          </script>
     <title>
         Education
     </title>
@@ -68,9 +73,11 @@
                 <h2>MSc International Business</h2>
                 <h3>University of Birmingham</h3>
                 <h3>Taught in Singapore</h3>
-                <img src="sim pic">
+                <div>
+                <img id="simpic" src=".\images\SIM.jpg">
+                </div>
                 <div class="map" id="sgmap">
-                    Map of Singapore
+                    <!-- Map of Singapore -->
                 </div>
             </div>
         </div>
@@ -78,9 +85,11 @@
             <div id="uni">
                 <h2>BSc Sport and Exercise Science</h2>
                 <h3>University of Bath</h3>
-                <img src=".\images\bath pic">
+                <img id="uob" src=".\images\UOBname.jpg">
                 <img src=".\images\hockey">
-                <!--map showing Bath-->
+                <div class="map" id="bathmap">
+                    <!--map showing Bath-->
+                </div>
             </div>
         </div>
         <div id="strath">

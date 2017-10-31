@@ -26,10 +26,13 @@ function showSlides(n) {
 }
 
 function singMap() {
-    var sgMapOptions = {
-        center: new SVGFEMorphologyElement.maps.LatLng(51.5, -0.12),
-        zoom :10,
-        mapTypeId: google.maps.MapTypeId.HYBRID
-    }
-    var sgMap = new google.maps.Map(document.getElementById("sgmap"), sgMapOptions);
+    var singapore = {lat: 1.3295536, lng: 103.7739801}
+    var sgMap = new SVGFEMorphologyElement.maps.Map(dpcument.getElementById("sgmap"), {
+        zoom: 4,
+        center: singapore
+    });
+    var sgMarker = new SVGFEMorphologyElement.maps.Marker ({
+        position: singapore,
+        map: sgMap
+    });
 }

@@ -1,0 +1,25 @@
+#sim {
+    width: 95%;
+}
+
+#sgmap {
+    position: absolute;
+    height: 50%;
+    width: 50%;
+   }
+
+#simpic {
+    width: 47.5%;
+    margin: auto;
+}
+
+#uob {
+    height: 400px;
+}
+
+#bathmap {
+    height: 400px;
+    width: 50%;
+    margin: auto;
+    display: inline-block;
+}
