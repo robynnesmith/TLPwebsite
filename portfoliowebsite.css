@@ -1,0 +1,276 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+/*General Formatting*/
+body {
+    font-family: 'Lato', sans-serif;
+    color: #FFF;
+    background: #322f30;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+}
+
+.intextlink {
+    text-decoration: underline;
+    color: #fff;
+}
+
+p > a:hover{
+    color: #d9d9d9;
+    text-decoration:  underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin:  1% 0 1% 0;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+/*NAV BARS*/
+/*Main Nav Bar*/
+.main-navbar {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+}
+
+.navbar {
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    padding: 0;
+    background-color: #322f30;
+    position: relative;
+    align-content: center;
+    top: 0;
+}
+
+.navbar-item {
+    float: left;
+}
+
+.navbar a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #FFF;
+    color: #000000;
+}
+
+#educationdropdown:hover > a, #workdropdown:hover > a, #traveldropdown:hover > a, #hobbiesdropdown:hover > a{
+    background-color: #fff;
+    color: #000000;
+}
+
+/*Responsive Nav Bar*/
+@media screen and (max-width: 600px) {
+    .navbar div.right,
+    .navbar div {float: none}
+}
+
+/*Dropdown Nav Bar*/
+/*Dropdown Button*/
+.dropdown {
+    padding: 16px;
+    border: none;
+}
+
+/*Dropdown Content*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #fff;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #322f30;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #717171;
+    color: #fff;
+}
+
+.navbar-item:hover .dropdown-content {
+    display: block;
+}
+
+/*END OF NAV BARS*/
+
+/*SLIDESHOW*/
+* {box-sizing: border-box}
+
+/*Slideshow Container*/
+#about-slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+#secondslide, #thirdslide, #fourthslide, #fifthslide {
+    display: none;
+}
+
+/*Next and Previous Buttons*/
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    text-decoration: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/*Slideshow Caption Text*/
+.caption {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/*Slide Dots*/
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #2d0af3;
+}
+
+/*Fading Animation*/
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+/*END OF SLIDESHOW*/
+
+/*MAPS*/
+.map {
+    width: 30%;
+    height: 30%;
+}
+
+/*SG Map*/
+
+
+/*Follow Me Footer*/
+footer {
+    width: 100%;
+    background: #322f30;
+    bottom: 0px;
+    text-align: center;
+}
+
+.followme {
+    font-size: 1.4em;
+}
+
+.social-icons {
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #322f30;
+    position: relative;
+    align-content: center;
+    top: 0;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-icon {
+    float: left;
+}
+
+.fa-linkedin {
+    padding:10px 14px;
+    border-radius: 50%;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+    color: #fff;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+
+.fa-instagram {
+    padding:10px 14px;
+    border-radius: 50%;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+    color: #fff;
+}
+.fa-instagram:hover {
+    background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+}
