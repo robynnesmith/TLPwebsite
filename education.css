@@ -3,7 +3,7 @@
     height: 100vh;
 }
 
-#sgmap {
+#sgmap, #bathmap {
     width: 49%;
     min-width: 200px;
     padding-bottom: 33.33%;
@@ -11,7 +11,7 @@
     margin: auto;
    }
 
-#simpic {
+#simpic, #uob {
     width: 49%;
     min-width: 200px;
     margin: auto;
@@ -20,49 +20,67 @@
     padding-bottom: 10px;
 }
 
-#uob {
-    width: 49%;
-}
 
-#bathmap {
-    height: 400px;
-    width: 49%;
-    margin: auto;
-    display: inline-block;
-}
 
+/*
+Subjects = container 
+*/ 
 .subjects {
     position: relative;
-    width: 20%;
-}
-
-.alevels {
-    display: inline-block;
-    width: 100%;
-    height: auto;
-    background-color: #FFF;
-    z-index: -1;
-}
-
-.subjectname {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin: 0, 0, 0, 0;
-    background-color: rgb(107, 107, 107);
-    opacity: 0;
-    transition: .5 ease;
+    width: 20%; 
+    margin: 10px;  
 }
 
 .subjects:hover .subjectname {
     opacity: .8;
 }
 
-#maths, #physics, #biology, #chemistry {
-    color: #000000;
+
+
+.alevels {
+    display: block;
+    width: 100%;
+    min-width: 100px;
+    height: auto;
+    background-color: #FFF;
+    padding:10px;
+}
+
+.subjectname {
     position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(107, 107, 107);
+    margin: 10px;
+}
+
+#maths, #physics, #biology, #chemistry {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    min-width: 120px;
 }
+
+.wrapper {
+    display: flex;
+    grid-gap: 10px;
+    min-width: 120px;
+}
+
+.box {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 150%;
+    min-width: 120px;
+}
+

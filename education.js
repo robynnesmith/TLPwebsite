@@ -6,7 +6,7 @@ function initMap() {
     maps.forEach(function (map) {
         var coordinates = { lat: map[2], lng: map[3] };
         var googleMap = new google.maps.Map(map[1], {
-            zoom: 10,
+            zoom: 8,
             center: coordinates
         });
         var marker = new google.maps.Marker({
