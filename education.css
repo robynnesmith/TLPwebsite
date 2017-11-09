@@ -1,0 +1,60 @@
+.grid{
+    display:grid;
+    grid-template: 1fr 1fr 1fr 5fr 1fr 1fr 5fr 1fr 4fr / repeat(4, 1fr);
+}
+
+#msc {
+    grid-area: 1 / 1 / span 1 / span 4;
+}
+
+#birmingham {
+    grid-area: 2 / 1 / span 1 / span 4;
+}
+
+#location {
+    grid-area: 3 / 1 / span 1 / span 4;
+}
+
+#sim {
+    grid-area: 4 / 1 / span 1 / span 2;
+}
+
+#singmap {
+    grid-area: 4 / 3 / span 1 / span 2;
+}
+
+#bsc {
+    grid-area: 5 / 1 / span 1 / span 4;
+}
+
+#bath {
+    grid-area: 6 / 1 / span 1 / span 4;
+}
+
+#uob {
+    grid-area: 7 / 1 / span 1 / span 2;
+}
+
+#bathmap {
+    grid-area: 7 / 3 / span 1 / span 2;
+}
+
+#alevels {
+    grid-area: 8 / 1 / span 1 / span 4;
+}
+
+#maths, #mathspic {
+    grid-area: 9 / 1 / span 1 / span 1;
+}
+
+#physics, #physicspic {
+    grid-area: 9 / 2 / span 1 / span 1;
+}
+
+#chemistry, chemistrypic {
+    grid-area: 9 / 3 / span 1 / span 1;
+}
+
+#biology, #biologypic {
+    grid-area: 9 / 4 / span 1 / span 1;
+}
